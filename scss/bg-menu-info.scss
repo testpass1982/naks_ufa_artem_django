@@ -1,0 +1,395 @@
+.bg-info-menu {
+    background: url(/img/background.png) no-repeat;
+    background-size: cover;
+}
+
+.bg-color {
+    background-color: #1d1f2170;  
+}
+
+.header_box{
+    padding: 45px 0px;
+}
+
+.logo_otstup{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.text_adres::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(/img/here.png) center 0 no-repeat;
+}
+
+.text_adres{
+    color: #fff;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.text_phone::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    margin-top: 6px;
+    margin-left: -20px;
+    background: url(/img/phone.png) center 0 no-repeat;
+}
+
+.text_phone{
+    color: #fff;
+    margin-right: 15px;
+    font-size: 26px;
+}
+
+.text_phone_consultant{
+    font-size: 12px;
+    color: #fff;
+    margin-top: -18px;
+}
+
+.feedback_button_header a{
+    text-decoration: none;
+    color: #fff;    
+}
+
+
+.feedback_header {
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ffe13a;
+    padding: 8px 50px;
+    border-radius: 45px;  
+    color: #fff;
+    &:hover {
+        background-color: #ffffff25;
+        transition: 0.2s;
+    }   
+}
+
+.header_sasp{
+    text-align: right;
+}
+
+
+// Menu
+
+.menu__background {
+    padding: 30px 0px 30px 30px;
+    background-color: #fff;
+    // border-radius: 7px;   
+   
+    @media screen and (max-width: 992px) {
+        padding: 15px 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.line_menu {
+    border: 0.5px solid #fff;
+}
+
+.navbar {
+    font-size: 18px;
+    color: #39567e;
+
+}
+
+
+.menu__navbar ul {
+    color: #39567e;
+    font-size: 16;
+    text-transform: uppercase;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.menu__navbar .navbar {
+    padding: 0;
+}
+
+.menu__navbar .navbar li {
+    cursor: pointer;
+}
+
+
+.menu__navbar .navbar .nav-item .nav-link {
+    padding: 0;
+    color: #39567e;
+    font-weight: 450;
+}
+
+.menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
+    // padding: 0; 
+    margin-right: 35px;
+
+}
+
+.dropdown-item {
+    padding: 12px;
+}
+
+.dropdown-menu {
+    margin-top: 22px;
+    color: #39567e;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+    border: none;
+    border-radius: 0px;
+    text-transform: initial;
+    padding: 12px;
+
+    @media screen and (max-width: 320px) {
+        font-size: 16;
+        color: #39567e;
+    }
+}
+
+.dropdown-item a {
+    margin-bottom: 1px solid #000;
+}
+
+.menu__navbar .navbar .nav-item .nav__link__two {
+    margin-right: 35px;
+    color: #39567e;
+    font-weight: 450;
+
+    @media screen and (max-width: 992px) {
+        padding: 0px 0px 15px;
+        font-weight: 200;
+        color: #39567e;
+        font-weight: 450;
+    }
+}
+
+.navbar-collapse {
+    @media screen and (max-width: 992px) {
+        line-height: 2;
+    }
+
+    @media screen and (max-width: 320px) {
+        line-height: 2;
+    }
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link .navbar-dark .navbar-nav .nav-link:hover {
+    color: #39567e;
+}
+
+
+.navbar-dark .navbar-toggler {
+    background-color: #39567e;
+    border: none;
+    border-radius: 0px;    
+}
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #03274b;
+}
+
+.navbar-toggler {
+    // padding: 3px 10px;
+}
+
+
+// Конец меню
+
+// Форма поиска
+.form-control {
+    background-color: transparent;
+    float: right;
+}
+
+.form-inline {
+    @media screen and (max-width: 320px) {
+        width: 75%;
+    }
+}
+
+.form-control:focus {
+    color: #000;
+    background-color: transparent;
+    border-color: #39567e;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: #000;
+}
+
+input[type="search"]:-ms-input-placeholder {
+    color: #000;
+}
+
+input[type="search"]::-ms-input-placeholder {
+    color: #000;
+}
+
+input[type="search"]::placeholder {
+    color: #000;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.form-control:focus::-moz-placeholder {
+    color: transparent
+}
+
+.form-control:focus:-moz-placeholder {
+    color: transparent
+}
+
+.form-control:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.input__group {
+    @media screen and (max-width: 320px) {
+        text-align: left;
+    }
+}
+
+
+// Bg info center
+
+.headline_bg {
+    padding: 60px 0px 60px;
+}
+
+.head_bg_text {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+
+.head_bg_text_small {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.head_bg_text_small_two {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.head_bg_box_button {
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.request {
+    background: transparent;
+    border: none;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: 550;
+    }
+}
+
+.service {
+    background: transparent;
+    border: none;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 450;
+    }
+}
+
+.request_button {
+    background-color: #ffbd3d;
+    border: none;       
+    padding: 10px 25px;
+    color: #000;
+    text-decoration: none;
+    @media screen and (max-width: 320px) {
+        padding: 10px 10px;
+    }
+
+    &:hover {
+        background-color: #e9b754;
+        transition: 0.2s;
+        color: #000;
+    }
+
+}
+
+.service_button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+    margin-left: 25px;
+    color: #fff;
+    @media screen and (max-width: 365px) {
+        padding: 10px 45px;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.075);
+        transition: 0.2s;
+    }
+}
+
+.sro_np_naks_text {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.naks_link {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+
+    a {
+        color: #fff;
+    }
+
+    line-height: 1.8;
+    margin-top: 20px;
+}
