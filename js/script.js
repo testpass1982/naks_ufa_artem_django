@@ -36,7 +36,7 @@ if(newsText.length > size){
     });
 
   });
-
+  
 
   // Выбрать несколько элементов
 
@@ -183,5 +183,45 @@ if(newsText.length > size){
     });
   });
   
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+        0:{
+          items:1,
+          nav:true
+        },
+        600:{
+          items:3,
+          nav:false
+        },
+        1000:{
+          items:5,
+          nav:true,
+          loop:false
+        }
+      }
+    })
+  });
+
+  $('.owl-carousel').owlCarousel({
+    loop : true
+  });
+  
+  $().fancybox({
+    selector : '.owl-item:not(.cloned) a',
+    hash   : false,
+    thumbs : {
+      autoStart : true
+    },
+    buttons : [
+      'zoom',
+      'download',
+      'close'
+    ]
+  });
 
 };

@@ -1,0 +1,124 @@
+.head_info_center {
+  font-size: 26px;
+  color: #14284b;
+  font-weight: 500;
+  line-height: 1.6; }
+
+.info_center_small_text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #14284b; }
+
+.service_small_text_link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #14284b; }
+
+.link_service_text::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  margin-top: 10px;
+  background: url(/img/kvadrat.png) center 0 no-repeat; }
+
+.link_list_service a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  color: #14284b;
+  font-weight: 400;
+  line-height: 1.8; }
+  .link_list_service a:hover {
+    color: #395688; }
+
+.info_svidetelstva_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #14284b; }
+
+.img_box {
+  margin-right: 15px;
+  width: 100px; }
+  .img_box:hover {
+    transition: 0.2s;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03); }
+  @media screen and (max-width: 576px) {
+    .img_box {
+      width: 100%; } }
+
+.box_attestat {
+  background-color: #14284b;
+  padding: 15px;
+  margin-bottom: 15px; }
+  .box_attestat:hover {
+    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+    transition: 0.2s;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03); }
+
+.box_head_number_text {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px; }
+
+.box_attestat_info_text {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.box_line_attestat {
+  border: 0.5px solid #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 40px; }
+
+.box_right_headline_service {
+  background-color: #f3f3f3;
+  padding: 30px 45px; }
+
+.headline_text_right_column {
+  font-size: 22px;
+  font-weight: 500;
+  color: #39567e;
+  margin-bottom: 0px; }
+
+.box_list_service_right_column a {
+  text-decoration: none;
+  list-style-type: none; }
+
+.list_service {
+  padding: 15px 25px;
+  margin: 0px; }
+
+.service_right_column::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  margin-left: -35px;
+  background: url(/img/arrow_service.png) center 0 no-repeat; }
+
+.service_right_column {
+  font-size: 16px;
+  font-weight: 450;
+  margin-top: 15px;
+  color: #39567e; }
+  .service_right_column:hover {
+    margin-left: 15px;
+    transition: 0.3s; }

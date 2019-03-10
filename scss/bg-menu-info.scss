@@ -9,12 +9,11 @@
 
 .header_box{
     padding: 45px 0px;
+    @media screen and (max-width: 992px){
+        text-align: center;
+         }
 }
 
-.logo_otstup{
-    margin-right: 15px;
-    margin-left: 15px;
-}
 
 .text_adres::before {
     content: '';
@@ -25,12 +24,21 @@
     margin-top: 5px;
     margin-left: -20px;
     background: url(/img/here.png) center 0 no-repeat;
+    @media screen and (max-width: 992px){       
+       display: none;    
+         }
+  
 }
 
 .text_adres{
     color: #fff;
     margin-right: 15px;
     font-size: 14px;
+    @media screen and (max-width: 992px){   
+        margin-top: 15px;    
+      margin-right: 0px;
+      font-size: 12px;
+         }
 }
 
 .text_phone::before {
@@ -42,12 +50,18 @@
     margin-top: 6px;
     margin-left: -20px;
     background: url(/img/phone.png) center 0 no-repeat;
+    @media screen and (max-width: 992px){       
+       display: none;
+         }
 }
 
 .text_phone{
     color: #fff;
     margin-right: 15px;
     font-size: 26px;
+    @media screen and (max-width: 992px){       
+      margin-right: 0px;
+         }
 }
 
 .text_phone_consultant{
@@ -56,9 +70,16 @@
     margin-top: -18px;
 }
 
+.feedback_button_header{
+    @media screen and (max-width: 320px){       
+        margin-top: 15px;
+        margin-bottom: 15px;
+         }
+}
+
 .feedback_button_header a{
     text-decoration: none;
-    color: #fff;    
+    color: #fff;      
 }
 
 
@@ -77,6 +98,10 @@
 
 .header_sasp{
     text-align: right;
+    @media screen and (max-width: 992px){
+        text-align: center;
+        margin-top: 15px;
+         }
 }
 
 
@@ -184,16 +209,28 @@
 }
 
 
-
 .navbar-dark .navbar-nav .nav-link .navbar-dark .navbar-nav .nav-link:hover {
     color: #39567e;
 }
 
-
 .navbar-dark .navbar-toggler {
-    background-color: #39567e;
+    background-color: transparent;
     border: none;
-    border-radius: 0px;    
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background: url(/img/burger.svg) no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.menu__navbar ul {
+    @media screen and (max-width: 992px){
+   margin-left: 25px;
+    }
 }
 
 
@@ -209,69 +246,12 @@
 
 // Конец меню
 
-// Форма поиска
-.form-control {
-    background-color: transparent;
-    float: right;
-}
-
-.form-inline {
-    @media screen and (max-width: 320px) {
-        width: 75%;
-    }
-}
-
-.form-control:focus {
-    color: #000;
-    background-color: transparent;
-    border-color: #39567e;
-    outline: 0;
-    box-shadow: none;
-}
-
-input[type="search"]::-webkit-input-placeholder {
-    color: #000;
-}
-
-input[type="search"]:-ms-input-placeholder {
-    color: #000;
-}
-
-input[type="search"]::-ms-input-placeholder {
-    color: #000;
-}
-
-input[type="search"]::placeholder {
-    color: #000;
-}
-
-.form-control:focus::-webkit-input-placeholder {
-    color: transparent
-}
-
-.form-control:focus::-moz-placeholder {
-    color: transparent
-}
-
-.form-control:focus:-moz-placeholder {
-    color: transparent
-}
-
-.form-control:focus:-ms-input-placeholder {
-    color: transparent
-}
-
-.input__group {
-    @media screen and (max-width: 320px) {
-        text-align: left;
-    }
-}
 
 
 // Bg info center
 
 .headline_bg {
-    padding: 60px 0px 60px;
+    padding: 66px 0px 67px;
 }
 
 .head_bg_text {
@@ -282,6 +262,9 @@ input[type="search"]::placeholder {
     color: #fff;
     text-transform: uppercase;
     line-height: 1.8;
+    @media screen and (max-width: 400px) {
+        font-size: 28px;
+    }
 }
 
 .head_bg_text_small {
@@ -309,6 +292,24 @@ input[type="search"]::placeholder {
     vertical-align: middle;
     text-align: center;
     margin-bottom: 55px;
+    @media screen and (max-width: 397px) {
+        display: none;
+    }
+}
+
+
+.head_bg_box_button_mob {
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 55px;
+    display: none;
+    @media screen and (max-width: 397px) {
+        display: block;
+    }
+}
+
+.button_request{
+    margin-bottom: 35px;
 }
 
 .request {
@@ -341,8 +342,9 @@ input[type="search"]::placeholder {
     padding: 10px 25px;
     color: #000;
     text-decoration: none;
-    @media screen and (max-width: 320px) {
-        padding: 10px 10px;
+    @media screen and (max-width: 397px) {
+        padding: 12px 45px;
+        margin-bottom: 15px;
     }
 
     &:hover {
@@ -359,9 +361,9 @@ input[type="search"]::placeholder {
     padding: 10px 50px;
     margin-left: 25px;
     color: #fff;
-    @media screen and (max-width: 365px) {
-        padding: 10px 45px;
-        margin-left: 10px;
+    @media screen and (max-width: 397px) {
+        padding: 12px 73px;
+      margin-left: 0px;     
     }
 
     &:hover {

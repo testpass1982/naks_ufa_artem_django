@@ -7,10 +7,9 @@
 
 .header_box {
   padding: 45px 0px; }
-
-.logo_otstup {
-  margin-right: 15px;
-  margin-left: 15px; }
+  @media screen and (max-width: 992px) {
+    .header_box {
+      text-align: center; } }
 
 .text_adres::before {
   content: '';
@@ -21,11 +20,19 @@
   margin-top: 5px;
   margin-left: -20px;
   background: url(/img/here.png) center 0 no-repeat; }
+  @media screen and (max-width: 992px) {
+    .text_adres::before {
+      display: none; } }
 
 .text_adres {
   color: #fff;
   margin-right: 15px;
   font-size: 14px; }
+  @media screen and (max-width: 992px) {
+    .text_adres {
+      margin-top: 15px;
+      margin-right: 0px;
+      font-size: 12px; } }
 
 .text_phone::before {
   content: '';
@@ -36,16 +43,27 @@
   margin-top: 6px;
   margin-left: -20px;
   background: url(/img/phone.png) center 0 no-repeat; }
+  @media screen and (max-width: 992px) {
+    .text_phone::before {
+      display: none; } }
 
 .text_phone {
   color: #fff;
   margin-right: 15px;
   font-size: 26px; }
+  @media screen and (max-width: 992px) {
+    .text_phone {
+      margin-right: 0px; } }
 
 .text_phone_consultant {
   font-size: 12px;
   color: #fff;
   margin-top: -18px; }
+
+@media screen and (max-width: 320px) {
+  .feedback_button_header {
+    margin-top: 15px;
+    margin-bottom: 15px; } }
 
 .feedback_button_header a {
   text-decoration: none;
@@ -64,6 +82,10 @@
 
 .header_sasp {
   text-align: right; }
+  @media screen and (max-width: 992px) {
+    .header_sasp {
+      text-align: center;
+      margin-top: 15px; } }
 
 .menu__background {
   padding: 30px 0px 30px 30px;
@@ -146,59 +168,27 @@
   color: #39567e; }
 
 .navbar-dark .navbar-toggler {
-  background-color: #39567e;
+  background-color: transparent;
   border: none;
-  border-radius: 0px; }
+  border-radius: 0px;
+  box-shadow: none;
+  outline: none; }
+
+.navbar-dark .navbar-toggler-icon {
+  background: url(/img/burger.svg) no-repeat;
+  background-size: cover;
+  margin-left: 10px; }
+
+@media screen and (max-width: 992px) {
+  .menu__navbar ul {
+    margin-left: 25px; } }
 
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: #03274b; }
 
-.form-control {
-  background-color: transparent;
-  float: right; }
-
-@media screen and (max-width: 320px) {
-  .form-inline {
-    width: 75%; } }
-
-.form-control:focus {
-  color: #000;
-  background-color: transparent;
-  border-color: #39567e;
-  outline: 0;
-  box-shadow: none; }
-
-input[type="search"]::-webkit-input-placeholder {
-  color: #000; }
-
-input[type="search"]:-ms-input-placeholder {
-  color: #000; }
-
-input[type="search"]::-ms-input-placeholder {
-  color: #000; }
-
-input[type="search"]::placeholder {
-  color: #000; }
-
-.form-control:focus::-webkit-input-placeholder {
-  color: transparent; }
-
-.form-control:focus::-moz-placeholder {
-  color: transparent; }
-
-.form-control:focus:-moz-placeholder {
-  color: transparent; }
-
-.form-control:focus:-ms-input-placeholder {
-  color: transparent; }
-
-@media screen and (max-width: 320px) {
-  .input__group {
-    text-align: left; } }
-
 .headline_bg {
-  padding: 60px 0px 60px; }
+  padding: 66px 0px 67px; }
 
 .head_bg_text {
   vertical-align: middle;
@@ -208,6 +198,9 @@ input[type="search"]::placeholder {
   color: #fff;
   text-transform: uppercase;
   line-height: 1.8; }
+  @media screen and (max-width: 400px) {
+    .head_bg_text {
+      font-size: 28px; } }
 
 .head_bg_text_small {
   vertical-align: middle;
@@ -232,6 +225,21 @@ input[type="search"]::placeholder {
   vertical-align: middle;
   text-align: center;
   margin-bottom: 55px; }
+  @media screen and (max-width: 397px) {
+    .head_bg_box_button {
+      display: none; } }
+
+.head_bg_box_button_mob {
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 55px;
+  display: none; }
+  @media screen and (max-width: 397px) {
+    .head_bg_box_button_mob {
+      display: block; } }
+
+.button_request {
+  margin-bottom: 35px; }
 
 .request {
   background: transparent;
@@ -257,9 +265,10 @@ input[type="search"]::placeholder {
   padding: 10px 25px;
   color: #000;
   text-decoration: none; }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 397px) {
     .request_button {
-      padding: 10px 10px; } }
+      padding: 12px 45px;
+      margin-bottom: 15px; } }
   .request_button:hover {
     background-color: #e9b754;
     transition: 0.2s;
@@ -271,10 +280,10 @@ input[type="search"]::placeholder {
   padding: 10px 50px;
   margin-left: 25px;
   color: #fff; }
-  @media screen and (max-width: 365px) {
+  @media screen and (max-width: 397px) {
     .service_button {
-      padding: 10px 45px;
-      margin-left: 10px; } }
+      padding: 12px 73px;
+      margin-left: 0px; } }
   .service_button:hover {
     background-color: rgba(255, 255, 255, 0.075);
     transition: 0.2s; }
