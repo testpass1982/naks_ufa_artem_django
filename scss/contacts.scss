@@ -1,14 +1,14 @@
-.box_contacti_background{
+.box_contacti_background {
     background: url(/img/contacti.png) no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
 
-.box_contacti_color{
+.box_contacti_color {
     background-color: rgba(38, 37, 34, 0.8);
     padding: 50px 0px 50px;
 }
 
-.box_contacti_number{
+.box_contacti_number {
     margin-bottom: 45px;
 }
 
@@ -16,20 +16,20 @@
     content: '';
     position: absolute;
     width: 25px;
-    height: 25px;    
-    margin-top: 10px;  
-    margin-left: -35px;  
-    background: url(/img/phone.png) center 0 no-repeat;   
+    height: 25px;
+    margin-top: 10px;
+    margin-left: -35px;
+    background: url(/img/phone.png) center 0 no-repeat;
 }
 
-.contacti_number{
+.contacti_number {
     font-size: 30px;
     font-weight: 450;
     color: #fff;
     padding-left: 35px;
 }
 
-.contacti_consultant{
+.contacti_consultant {
     font-size: 16px;
     font-weight: 350;
     color: #fff;
@@ -41,14 +41,14 @@
     content: '';
     position: absolute;
     width: 25px;
-    height: 25px;    
-    margin-top: 10px;  
-    margin-left: -35px;  
-    background: url(/img/here.png) center 0 no-repeat;   
+    height: 25px;
+    margin-top: 10px;
+    margin-left: -35px;
+    background: url(/img/here.png) center 0 no-repeat;
 }
 
-.contacti_adres_text{
-    font-size: 16px;
+.contacti_adres_text {
+    font-size: 20px;
     font-weight: 350;
     color: #fff;
     padding-left: 35px;
@@ -60,16 +60,27 @@
     content: '';
     position: absolute;
     width: 25px;
-    height: 25px;    
-    margin-top: 7px;  
-    margin-left: -35px;  
-    background: url(/img/mail.png) center 0 no-repeat;   
+    height: 25px;
+    margin-top: 7px;
+    margin-left: -35px;
+    background: url(/img/mail.png) center 0 no-repeat;
 }
 
-.contacti_mail{
+.contacti_mail {
     font-size: 16px;
     font-weight: 350;
     color: #fff;
     padding-left: 35px;
     margin-top: -15px;
+
+    @media screen and (max-width: 435px) {
+        margin-bottom: 15px;
+    }
 }
+
+.map{
+    @media screen and (max-width: 435px) {
+        margin-top: 15px;
+    }
+}
+

@@ -35,10 +35,12 @@
   padding: 25px 0px 25px;
   margin-bottom: 15px; }
 
-.headline_quantity {
+.counter {
   font-size: 45px;
   font-weight: 600;
-  color: #fff; }
+  color: #fff;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
 .subtitle_quantity {
   font-size: 16px;

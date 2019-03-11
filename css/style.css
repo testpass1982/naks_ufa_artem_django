@@ -3,9 +3,7 @@ body {
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  background-color: #fff;
-  opacity: 0;
-  transition: .4s; }
+  background-color: #fff; }
 
 @media (min-width: 360px) {
   .container {
@@ -983,10 +981,12 @@ input[type=file] {
   padding: 25px 0px 25px;
   margin-bottom: 15px; }
 
-.headline_quantity {
+.counter {
   font-size: 45px;
   font-weight: 600;
-  color: #fff; }
+  color: #fff;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
 .subtitle_quantity {
   font-size: 16px;
@@ -998,6 +998,9 @@ input[type=file] {
   border: 0.5px solid #fff;
   width: 70px;
   margin: 0 auto; }
+
+.img_partenrs {
+  border: 1px solid #ffa0a0; }
 
 .box_contacti_background {
   background: url(/img/contacti.png) no-repeat;
@@ -1042,7 +1045,7 @@ input[type=file] {
   background: url(/img/here.png) center 0 no-repeat; }
 
 .contacti_adres_text {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 350;
   color: #fff;
   padding-left: 35px;
@@ -1063,6 +1066,13 @@ input[type=file] {
   color: #fff;
   padding-left: 35px;
   margin-top: -15px; }
+  @media screen and (max-width: 435px) {
+    .contacti_mail {
+      margin-bottom: 15px; } }
+
+@media screen and (max-width: 435px) {
+  .map {
+    margin-top: 15px; } }
 
 .box_footer_bg {
   padding: 50px; }
@@ -1183,3 +1193,8 @@ input[type=file] {
       text-align: center; } }
   .razrabotano_basement_footer a {
     color: #6f7379; }
+
+.line_footer_basement {
+  border: 0.5px solid #4e4e4e;
+  margin-top: 25px;
+  margin-bottom: 25px; }

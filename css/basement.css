@@ -117,3 +117,8 @@
       text-align: center; } }
   .razrabotano_basement_footer a {
     color: #6f7379; }
+
+.line_footer_basement {
+  border: 0.5px solid #4e4e4e;
+  margin-top: 25px;
+  margin-bottom: 25px; }

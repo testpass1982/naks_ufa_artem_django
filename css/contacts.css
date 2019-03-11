@@ -41,7 +41,7 @@
   background: url(/img/here.png) center 0 no-repeat; }
 
 .contacti_adres_text {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 350;
   color: #fff;
   padding-left: 35px;
@@ -62,3 +62,10 @@
   color: #fff;
   padding-left: 35px;
   margin-top: -15px; }
+  @media screen and (max-width: 435px) {
+    .contacti_mail {
+      margin-bottom: 15px; } }
+
+@media screen and (max-width: 435px) {
+  .map {
+    margin-top: 15px; } }

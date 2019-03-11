@@ -2,9 +2,7 @@ body {
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  background-color: #fff;
-  opacity: 0;
-  transition: .4s; }
+  background-color: #fff; }
 
 @media (min-width: 360px) {
   .container {

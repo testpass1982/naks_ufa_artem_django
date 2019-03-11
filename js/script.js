@@ -1,14 +1,33 @@
 // Кнопка поиска
 window.onload = function () {
-    // Обрез текста
-    var size = 175,
-    newsContent= $('.box__news__text'),
-    newsText = newsContent.text();
-    
-if(newsText.length > size){
-  newsContent.text(newsText.slice(0, size) + '...');
-}
+// Карусель
 
+  
+  $().fancybox({
+    selector : '.owl-item:not(.cloned) a',
+    hash   : false,
+    thumbs : {
+      autoStart : true
+    },
+    buttons : [
+      'zoom',
+      'download',
+      'close'
+    ]
+  });
+
+// Счетчик
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000,
+  offset: 70,
+  beginAt: 100,
+  formatter: function (n) {
+    return n.replace(/,/g, '.');
+  }
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('h2').addClass('animated fadeIn');
 
 
   // Бургер меню
@@ -181,47 +200,7 @@ if(newsText.length > size){
     $('.fileUploader').uploader({
       MessageAreaText: "Прикрепить файлы"
     });
-  });
-  
+  });  
 
-  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      responsiveClass:true,
-      responsive:{
-        0:{
-          items:1,
-          nav:true
-        },
-        600:{
-          items:3,
-          nav:false
-        },
-        1000:{
-          items:5,
-          nav:true,
-          loop:false
-        }
-      }
-    })
-  });
-
-  $('.owl-carousel').owlCarousel({
-    loop : true
-  });
-  
-  $().fancybox({
-    selector : '.owl-item:not(.cloned) a',
-    hash   : false,
-    thumbs : {
-      autoStart : true
-    },
-    buttons : [
-      'zoom',
-      'download',
-      'close'
-    ]
-  });
 
 };
