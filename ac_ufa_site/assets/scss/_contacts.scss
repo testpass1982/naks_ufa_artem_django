@@ -1,5 +1,5 @@
 .box_contacti_background {
-    background: url(/img/contacti.png) no-repeat;
+    background: url(/static/img/contacti.png) no-repeat;
     background-size: cover;
 }
 
@@ -19,7 +19,7 @@
     height: 25px;
     margin-top: 10px;
     margin-left: -35px;
-    background: url(/img/phone.png) center 0 no-repeat;
+    background: url(/static/img/phone.png) center 0 no-repeat;
 }
 
 .contacti_number {
@@ -44,7 +44,7 @@
     height: 25px;
     margin-top: 10px;
     margin-left: -35px;
-    background: url(/img/here.png) center 0 no-repeat;
+    background: url(/static/img/here.png) center 0 no-repeat;
 }
 
 .contacti_adres_text {
@@ -63,7 +63,7 @@
     height: 25px;
     margin-top: 7px;
     margin-left: -35px;
-    background: url(/img/mail.png) center 0 no-repeat;
+    background: url(/static/img/mail.png) center 0 no-repeat;
 }
 
 .contacti_mail {

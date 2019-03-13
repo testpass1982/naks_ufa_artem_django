@@ -16,6 +16,18 @@ margin-top: -5px;
   color: #6f7379;
   margin-top: 35px;
   margin-bottom: 25px;
+  @media screen and (max-width: 435px) {
+    margin-top: 15px;
+    margin-bottom: 10px;
+   }
+}
+
+.logo_gac_footer{
+    width: 300px;
+    @media screen and (max-width: 435px) {
+        width: 270px;
+        margin-bottom: 0px;
+       }
 }
 
 .spks_logo{
@@ -66,14 +78,14 @@ color: #fff;
 }
 
 
-.point_grey::before {
+.point_yellow::before {
     content: '';
     position: absolute;
     width: 35px;
     height: 35px;
     left: 0;  
     margin-top: 5px;
-    background: url(/img/kvadrat_grey.png) center 0 no-repeat;
+    background: url(/static/img/kvadrat_grey.png) center 0 no-repeat;
 }
 
 .footer_info_link{
@@ -153,6 +165,6 @@ color: #fff;
 
 .line_footer_basement{
     border: 0.5px solid #4e4e4e;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

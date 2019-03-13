@@ -40,8 +40,19 @@
 
 .box_img_service {   
     margin-bottom: 45px;
-    background: url(/img/img_service_1.png) no-repeat;
+    background: url(/static/img/img_service_1.png) no-repeat;
     background-size: cover;
+    a{
+        text-decoration: none;
+    }
+    &:hover{
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        -o-transform: scale(1.01);
+    }
     @media screen and (max-width: 435px) {
         margin-top: 25px;
       }
@@ -49,7 +60,7 @@
 
 .box_img_service_2 {   
     margin-bottom: 45px;
-    background: url(/img/img_service_2.png) no-repeat;
+    background: url(/static/img/img_service_2.png) no-repeat;
     background-size: cover;
     a{
         text-decoration: none;
@@ -69,7 +80,7 @@
 
 .box_img_service_3 {   
     margin-bottom: 45px;
-    background: url(/img/img_service_3.png) no-repeat;
+    background: url(/static/img/img_service_3.png) no-repeat;
     background-size: cover;
     a{
         text-decoration: none;
@@ -89,7 +100,7 @@
 
 .box_img_service_4 {   
     margin-bottom: 45px;
-    background: url(/img/img_service_2.png) no-repeat;
+    background: url(/static/img/img_service_2.png) no-repeat;
     background-size: cover;
     a{
         text-decoration: none;
@@ -109,7 +120,7 @@
 
 .box_img_service_5 {   
     margin-bottom: 45px;
-    background: url(/img/img_service_2.png) no-repeat;
+    background: url(/static/img/img_service_2.png) no-repeat;
     background-size: cover;
     a{
         text-decoration: none;
@@ -129,7 +140,7 @@
 
 .box_img_service_6 {   
     margin-bottom: 45px;
-    background: url(/img/img_service_2.png) no-repeat;
+    background: url(/static/img/img_service_2.png) no-repeat;
     background-size: cover;
     a{
         text-decoration: none;

@@ -1,2 +1,40 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
+
+{% block content  %}
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/modal-window.html' %}
+  {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  {% include 'mainapp/includes/service.html' %}   
+  {% comment %} <div w3-include-html="includes/service.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+      {% include 'mainapp/includes/center-info.html' %} 
+  {% comment %} <div w3-include-html="includes/center-info.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+      {% include 'mainapp/includes/evidence.html' %} 
+  {% comment %} <div w3-include-html="includes/evidence.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+      {% include 'mainapp/includes/certified.html' %} 
+  {% comment %} <div w3-include-html="includes/certified.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+      {% include 'mainapp/includes/partners.html' %} 
+  {% comment %} <div w3-include-html="includes/partners.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+      {% include 'mainapp/includes/contacts.html' %} 
+  {% comment %} <div w3-include-html="includes/contacts.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+{% endblock  %}

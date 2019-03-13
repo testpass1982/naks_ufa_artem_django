@@ -1,9 +1,0 @@
-body {
-  font-family: "Avenir Next Cyr", sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  background-color: #fff; }
-
-@media (min-width: 360px) {
-  .container {
-    max-width: 1570px; } }

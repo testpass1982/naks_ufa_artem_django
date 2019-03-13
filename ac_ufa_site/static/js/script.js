@@ -1,33 +1,33 @@
 // Кнопка поиска
 window.onload = function () {
-// Карусель
+  // Карусель
 
-  
+
   $().fancybox({
-    selector : '.owl-item:not(.cloned) a',
-    hash   : false,
-    thumbs : {
-      autoStart : true
+    selector: '.owl-item:not(.cloned) a',
+    hash: false,
+    thumbs: {
+      autoStart: true
     },
-    buttons : [
+    buttons: [
       'zoom',
       'download',
       'close'
     ]
   });
 
-// Счетчик
-$('.counter').counterUp({
-  delay: 10,
-  time: 1000,
-  offset: 70,
-  beginAt: 100,
-  formatter: function (n) {
-    return n.replace(/,/g, '.');
-  }
-});
-$('.counter').addClass('animated fadeInDownBig');
-$('h2').addClass('animated fadeIn');
+  // Счетчик
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1200,
+    offset: 70,
+    beginAt: 100,
+    formatter: function (n) {
+      return n.replace(/,/g, '.');
+    }
+  });
+  $('.counter').addClass('animated fadeInDownBig');
+  $('h2').addClass('animated fadeIn');
 
 
   // Бургер меню
@@ -55,7 +55,7 @@ $('h2').addClass('animated fadeIn');
     });
 
   });
-  
+
 
   // Выбрать несколько элементов
 
@@ -200,7 +200,16 @@ $('h2').addClass('animated fadeIn');
     $('.fileUploader').uploader({
       MessageAreaText: "Прикрепить файлы"
     });
-  });  
+  });
 
+
+  $(document).ready(function () {
+    $("#service").on("click", "a", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+        top = $(id).offset().top;
+      $('body,html').animate({ scrollTop: top }, 1500);
+    });
+  });
 
 };

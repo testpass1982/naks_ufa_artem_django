@@ -1,5 +1,5 @@
 .box_certified_background{
-    background: url(/img/bg_certified.png) no-repeat;
+    background: url(/static/img/bg_certified.png) no-repeat;
     background-size: cover;    
 }
 
@@ -40,6 +40,16 @@
     text-align: center;
     padding: 25px 0px 25px;
     margin-bottom: 15px;
+    &:hover{
+        
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(2.02);
+            -o-transform: scale(2.02);
+         
+    }
 }
 
 
@@ -53,8 +63,8 @@
 
 .subtitle_quantity{
     font-size: 16px;
-    font-weight: 450;
-    text-transform: uppercase;
+    font-weight: 350;
+    // text-transform: uppercase;
     color: #fff;
 }
 

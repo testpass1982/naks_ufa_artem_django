@@ -22,6 +22,7 @@ from django.conf import settings
 urlpatterns = [
    path('admin/', admin.site.urls),
    path('', mainapp.index, name='index'),
+   path('reestr/', mainapp.reestr, name='reestr'),  
 ]
 
 if settings.DEBUG:

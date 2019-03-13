@@ -5,12 +5,10 @@ body {
     font-size: 12px;
     line-height: 1.5;
     background-color: #fff; 
-
 }
 
-
-@media (min-width: 360px) {
-    .container {
+.container {
+  @media (min-width: 360px) {
         max-width: 1570px;
     }
 }

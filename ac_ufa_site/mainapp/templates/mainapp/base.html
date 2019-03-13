@@ -1,4 +1,5 @@
-{% load staticfiles %}<!DOCTYPE html>
+
+{% load staticfiles %}{% load sass_tags %}<!DOCTYPE html>
 <html lang="en">
 
 
@@ -23,7 +24,7 @@
   <!-- <link rel="stylesheet" href="fonts/font.css"> -->
   <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% sass_src 'scss/style.scss' %}">
   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
   <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
   {% endblock %}
@@ -46,35 +47,6 @@
   {% comment %} <div w3-include-html="includes/bg-menu-info.html"></div> {% endcomment %}
   <!-- End Include bg-menu-info -->
 
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/service.html' %}   
-  {% comment %} <div w3-include-html="includes/service.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
-
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/center-info.html' %} 
-  {% comment %} <div w3-include-html="includes/center-info.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
-
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/evidence.html' %} 
-  {% comment %} <div w3-include-html="includes/evidence.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
-
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/certified.html' %} 
-  {% comment %} <div w3-include-html="includes/certified.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
-
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/partners.html' %} 
-  {% comment %} <div w3-include-html="includes/partners.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
-
-  <!-- Include Modal -->
-      {% include 'mainapp/includes/contacts.html' %} 
-  {% comment %} <div w3-include-html="includes/contacts.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
 
   {% block content  %}
 
@@ -95,16 +67,19 @@
     crossorigin="anonymous"></script>
     
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    
+
+
   <script src="{% static 'js/script.js' %}"></script>
-  <script src="{% static '/js/bootstrap.js' %}"></script>
-  <script src="{% static '/js/jquery.fancybox.js' %}"></script>
-  <script src="{% static '/js/jquery.maskedinput.js' %}"></script>
-  <script src="{% static '/js/jquery.maskedinput.min.js' %}"></script>
-  <script src="{% static '/js/jquery.counterup.min.js' %}"></script>
-  <script src="{% static '/js/jquery.counterup.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+  <script src="{% static 'js/jquery.maskedinput.js' %}"></script>
+  <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+  <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'js/jquery.counterup.js' %}"></script>
+
+  
 
 
 </body>

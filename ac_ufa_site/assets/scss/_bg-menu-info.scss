@@ -1,5 +1,5 @@
 .bg-info-menu {
-    background: url(/img/background.png) no-repeat;
+    background: url(/static/img/background.png) no-repeat;
     background-size: cover;
 }
 
@@ -15,32 +15,6 @@
 }
 
 
-.text_adres::before {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    left: 0;
-    margin-top: 5px;
-    margin-left: -20px;
-    background: url(/img/here.png) center 0 no-repeat;
-    @media screen and (max-width: 992px){       
-       display: none;    
-         }
-  
-}
-
-.text_adres{
-    color: #fff;
-    margin-right: 15px;
-    font-size: 14px;
-    @media screen and (max-width: 992px){   
-        margin-top: 15px;    
-      margin-right: 0px;
-      font-size: 12px;
-         }
-}
-
 .text_phone::before {
     content: '';
     position: absolute;
@@ -49,7 +23,7 @@
     left: 0;
     margin-top: 6px;
     margin-left: -20px;
-    background: url(/img/phone.png) center 0 no-repeat;
+    background: url(/static/img/phone.png) center 0 no-repeat;
     @media screen and (max-width: 992px){       
        display: none;
          }
@@ -104,9 +78,29 @@
          }
 }
 
+.logo_sasp{
+    width: 90px;
+}
+
+.logo_ac{
+    @media screen and (max-width: 992px){
+        width: 300px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+         }
+}
+
+.logo_ac_2{
+    width: 250px;
+    @media screen and (max-width: 992px){
+        width: 200px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+         }
+}
+
 
 // Menu
-
 .menu__background {
     padding: 30px 0px 30px 30px;
     background-color: #fff;
@@ -222,7 +216,7 @@
 }
 
 .navbar-dark .navbar-toggler-icon{
-    background: url(/img/burger.svg) no-repeat;
+    background: url(/static/img/burger.svg) no-repeat;
     background-size: cover;
     margin-left: 10px;
 }
@@ -260,11 +254,19 @@
     font-size: 38px;
     font-weight: 500;
     color: #fff;
-    text-transform: uppercase;
-    line-height: 1.8;
+    margin-bottom: 0px;
+    text-transform: uppercase;   
     @media screen and (max-width: 400px) {
         font-size: 28px;
     }
+}
+
+.head_bg_text_two{
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 250;
+    margin-bottom: 0px;
 }
 
 .head_bg_text_small {
