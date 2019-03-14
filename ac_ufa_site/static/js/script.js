@@ -2,7 +2,7 @@
 window.onload = function () {
   // Карусель
 
-
+// Просмотр+скачать
   $().fancybox({
     selector: '.owl-item:not(.cloned) a',
     hash: false,
@@ -16,6 +16,8 @@ window.onload = function () {
     ]
   });
 
+
+  
   // Счетчик
   $('.counter').counterUp({
     delay: 10,

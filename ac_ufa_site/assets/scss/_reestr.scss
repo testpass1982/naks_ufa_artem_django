@@ -1,4 +1,7 @@
 // Реестр САСв
+
+
+
 .header__form__subject{
     margin-bottom: 20px;
 }
@@ -39,7 +42,7 @@
 .box__search__subject__form {
     padding: 35px;
     background-color: #fff;
-    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+ border: 1px solid rgb(238, 238, 238);
     border-radius: 3px;
     margin-bottom: 15px;    
     @media screen and (max-width: 1199px) {
@@ -113,7 +116,7 @@ label[for=type__of__viev] {
 
 .header__subject__list {
     padding: 25px 25px;
-    background-color: #fcfcfc;
+    background-color: #d6f0ff62;
     border-radius: 3px;
     margin-bottom: 15px;
 }
@@ -162,6 +165,8 @@ button:focus {
 .card-header:hover {
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
     background: transparent;
+    border: 1px solid #afdbfc;
+    transition: 0.2s;
 }
 
 .additional__information {
@@ -204,8 +209,8 @@ button:focus {
     font-weight: 500;
     color: #2e3e60;
     margin-top: 15px;
-    @media screen and (max-width: 20px) {
-        float: left;
+    @media screen and (max-width: 320px) {
+        text-align: center;
     }
 }
 

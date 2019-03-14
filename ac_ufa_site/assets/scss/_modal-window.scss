@@ -50,7 +50,8 @@
 	font-size: 20px;
 	margin-bottom: 10px;
 	&:focus{
-		background-color: #f5f5f5;
+        background-color: #f5f5f5;
+        box-shadow: none;
 	}		
 }
 .modal-content .form-control option {
@@ -183,7 +184,7 @@ padding: 12px 45px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 350;
-    border: 1px #8d8d8d solid;
+    border: 1px #39567e solid;
     border-radius: 3px;
     padding: 10px 20px;
     margin: 0px 15px 15px 0px;
@@ -191,7 +192,7 @@ padding: 12px 45px;
 }
 
 .choose__item .items li:hover {
-    background-color: #afafaf;;
+    background-color: #39567e;
     transition: 0.5s; 
 	transform: scale(1.02, 1.02);
 	color: #fff;
@@ -200,12 +201,12 @@ padding: 12px 45px;
 }
 
 .choose__item .items li:active {
-	background-color: #7a7a7a;
+	background-color: #45638d;
       
 }
 
 .selected {
-    background-color: #7a7a7a;
+    background-color: #39567e;
     border-radius: 300px;
 	padding: 7px;
 	color: #fff;	

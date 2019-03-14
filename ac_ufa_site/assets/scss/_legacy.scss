@@ -12,3 +12,34 @@ body {
         max-width: 1570px;
     }
 }
+
+.box_inside_pages{
+    padding: 50px 0px 50px;
+}
+
+
+.headline_inside_pages_line {
+    border: 0.5px solid #39567e;
+    margin-top: 35px;
+    width: 95px;
+    @media screen and (max-width: 435px) {
+      display: none;
+    }
+}
+
+
+.headline_inside_pages_text {   
+    font-size: 45px;
+    color: #39567e;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    @media screen and (max-width: 435px) {
+        margin-top: 25px;
+        font-size: 30px
+      }
+}
+
+.subtitle_inside_pages {
+    font-size: 14px;
+    margin-bottom: 35px;
+}

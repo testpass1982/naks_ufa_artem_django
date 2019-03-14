@@ -17,9 +17,11 @@
                     </div>                    
                     <div class="col-xl-2">
                         <div class="header_phone">
-                            <p class="text_phone">
-                                (347) 246-87-26
-                            </p>
+                           <a href="tel:(347) 246-87-26" title="Позвонить">
+                                <p class="text_phone">
+                                        (347) 246-87-26
+                                    </p>
+                           </a>
                             <p class="text_phone_consultant">
                                 Консультация специалиста
                             </p>
@@ -34,15 +36,15 @@
                     </div>
                     <div class="col-xl-1">
                         <div class="box_logo_3">
-                            <img src="{% static '/img/logo_2.png' %}" alt="">
-                            <img src="{% static '/img/logo_3.png' %}" alt="">
-                            <img src="{% static '/img/logo_4.png' %}" alt="">
+                            <img src="{% static '/img/logo_2.png' %}" title="Лауреат Премии Правительства РФ в области качества 2012 года" alt="">
+                            <img src="{% static '/img/logo_3.png' %}" title="Лауреат Премии СНГ 2013 года за достижения в области качества" alt="">
+                            <img src="{% static '/img/logo_4.png' %}" title="Член Международного Института Сварки" alt="">
                         </div>
                     </div>
                     <div class="col-xl-1">
                         <div class="header_sasp">
 
-                            <img src="{% static '/img/logo_sasp.svg' %}" class="logo_sasp" alt="">
+                            <img src="{% static '/img/logo_sasp.svg' %}" title="Организация допущена к выполнению работ по аттестации сварочного производства" class="logo_sasp" alt="">
                         </div>
                     </div>
                     <div class="col-xl-1"></div>
@@ -79,7 +81,7 @@
 
                                         <!-- Dropdown -->
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="doc.html#head__page">Центр аттестации
+                                            <a class="nav-link" href="{% url 'index' %}#center">Центр аттестации
                                                 <span class="sr-only">(current)</span>
                                             </a>
                                         </li>
@@ -100,7 +102,7 @@
                                         </li>
 
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="doc.html#head__page">Документы
+                                            <a class="nav-link" href="{% url 'doc' %}#doc">Документы
                                                 <span class="sr-only">(current)</span>
                                             </a>
                                         </li>
@@ -110,7 +112,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="contacti.html#head__page">Контакты
+                                            <a class="nav-link" href="{% url 'index' %}#contact">Контакты
                                                 <span class="sr-only">(current)</span>
                                             </a>
                                         </li>

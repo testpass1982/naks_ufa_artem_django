@@ -7,3 +7,6 @@ def index(request):
 
 def reestr(request):
     return render(request, 'mainapp/reestr.html')
+
+def doc(request):
+    return render(request, 'mainapp/doc.html')

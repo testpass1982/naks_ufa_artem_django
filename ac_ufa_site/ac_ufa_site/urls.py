@@ -23,6 +23,7 @@ urlpatterns = [
    path('admin/', admin.site.urls),
    path('', mainapp.index, name='index'),
    path('reestr/', mainapp.reestr, name='reestr'),  
+   path('doc/', mainapp.doc, name='doc'),  
 ]
 
 if settings.DEBUG:
