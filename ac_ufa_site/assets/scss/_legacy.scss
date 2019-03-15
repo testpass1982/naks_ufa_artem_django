@@ -5,6 +5,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
     background-color: #fff; 
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -42,4 +43,22 @@ body {
 .subtitle_inside_pages {
     font-size: 14px;
     margin-bottom: 35px;
+}
+
+.no-otstup{
+    @media screen and (max-width: 435px) {
+        margin: 0;
+        padding: 0;
+      }  
+
+    @media screen and (max-width: 435px) {
+        margin: 0;
+        padding: 0;
+      }  
+}
+
+.remove{
+    @media screen and (max-width: 992px) {
+        display: none;
+      }  
 }

@@ -4,47 +4,53 @@
         <div class="container-fluid">
             <div class="header_box">
                 <div class="row align-items-center">
-                    <div class="col-xl-1"></div>
-                    <div class="col-xl-2">
-                       <a href="{% url 'index' %}">
+                    <div class="col-xl-1 remove"></div>
+                    <div class="col-sm-6 col-xl-2">
+                        <a href="{% url 'index' %}">
                             <img src="{% static 'img/logo_gac_rb.svg' %}" class="logo_ac" alt="">
                         </a>
-                    </div>                    
-                    <div class="col-xl-2">
+                    </div>
+                    <div class="col-sm-5 col-xl-2">
+                        <div class="logo_ac_mob">
                             <a href="{% url 'index' %}">
-                                    <img src="{% static 'img/ac_ctc_logo.svg' %}" class="logo_ac_2" alt="">
-                                </a>
-                    </div>                    
-                    <div class="col-xl-2">
+                                <img src="{% static 'img/ac_ctc_logo.svg' %}" class="logo_ac_2" alt="">
+                                <img src="{% static '/img/logo_sasp.svg' %}" title="Организация допущена к выполнению работ по аттестации сварочного производства"
+                                    class="logo_sasp_mob" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-2">
                         <div class="header_phone">
-                           <a href="tel:(347) 246-87-26" title="Позвонить">
+                            <a href="tel:(347) 246-87-26" title="Позвонить">
                                 <p class="text_phone">
-                                        (347) 246-87-26
-                                    </p>
-                           </a>
+                                    (347) 246-87-26
+                                </p>
+                            </a>
                             <p class="text_phone_consultant">
                                 Консультация специалиста
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-sm-5 col-xl-2">
                         <div class="feedback_button_header">
-                            <a href="" class="feedback_header" data-toggle="modal" data-target="#modal-statement">
+                            <a href="" class="feedback_header" data-toggle="modal" data-target="#modal-question">
                                 Обратная связь
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-1">
+                    <div class="col-xl-1 remove">
                         <div class="box_logo_3">
-                            <img src="{% static '/img/logo_2.png' %}" title="Лауреат Премии Правительства РФ в области качества 2012 года" alt="">
-                            <img src="{% static '/img/logo_3.png' %}" title="Лауреат Премии СНГ 2013 года за достижения в области качества" alt="">
+                            <img src="{% static '/img/logo_2.png' %}" title="Лауреат Премии Правительства РФ в области качества 2012 года"
+                                alt="">
+                            <img src="{% static '/img/logo_3.png' %}" title="Лауреат Премии СНГ 2013 года за достижения в области качества"
+                                alt="">
                             <img src="{% static '/img/logo_4.png' %}" title="Член Международного Института Сварки" alt="">
                         </div>
                     </div>
                     <div class="col-xl-1">
                         <div class="header_sasp">
-
-                            <img src="{% static '/img/logo_sasp.svg' %}" title="Организация допущена к выполнению работ по аттестации сварочного производства" class="logo_sasp" alt="">
+                            <img src="{% static '/img/logo_sasp.svg' %}" title="Организация допущена к выполнению работ по аттестации сварочного производства"
+                                class="logo_sasp" alt="">
                         </div>
                     </div>
                     <div class="col-xl-1"></div>
@@ -54,7 +60,7 @@
 
             <div class="row align-items-center">
                 <div class="col-xl-1"></div>
-                <div class="col-xl-10">
+                <div class="col-xl-10 no-otstup">
                     <div class="menu__background">
                         <div class="menu__navbar">
                             <!--Navbar-->
@@ -85,20 +91,9 @@
                                                 <span class="sr-only">(current)</span>
                                             </a>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav__link__two dropdown-toggle" id="navbarDropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
-                                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                                <a class="dropdown-item" href="svarshik-specialist.html#head__page">Специальная
-                                                    подготовка сварщиков <br> и специалистов сварочного производства</a>
-                                                <a class="dropdown-item" href="svarshik.html#head__page">Аттестация
-                                                    сварщиков <br> и специалистов сварочного производства</a>
-                                                <a class="dropdown-item" href="atestat-svar-oborudovanya.html#head__page">Аттестация
-                                                    сварочного оборудования</a>
-                                                <a class="dropdown-item" href="atestat-technology-svarki.html#head__page">Аттестация
-                                                    технологий сварки</a>
-
-                                            </div>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="{% url 'index' %}#service">Услуги
+                                            </a>
                                         </li>
 
                                         <li class="nav-item active">
@@ -119,6 +114,16 @@
                                     </ul>
 
                                 </div>
+                                <div class="header_phone_mob">
+                                    <a href="tel:(347) 246-87-26" title="Позвонить">
+                                        <p class="text_phone_mob">
+                                            (347) 246-87-26
+                                        </p>
+                                    </a>
+                                    <p class="text_phone_consultant_mob">
+                                        Консультация специалиста
+                                    </p>
+                                </div>
                             </nav>
 
                             <!--/.Navbar-->
@@ -132,12 +137,12 @@
                 <div class="col-xl-12">
                     <div class="headline_bg">
                         <p class="head_bg_text">
-                            центр аттестации <br>                           
+                            центр аттестации <br>
                         </p>
                         <p class="head_bg_text_two">
-                            в области сварки <br>                           
+                            в области сварки <br>
                         </p>
-                                             
+
                         <p class="head_bg_text_small_two">
                             Аттестационный Центр СваркаТехСервис, являясь
                             членом СРО Ассоциация НАКС, <br> начало свою деятельность в 2003 году с аттестации
@@ -155,7 +160,7 @@
                                     заявку</a>
                             </button>
                             <button class="service">
-                                <a href="#service"  class="service_button">Услуги</a>
+                                <a href="" class="service_button">Услуги</a>
                             </button>
                         </div>
                         <div class="head_bg_box_button_mob">

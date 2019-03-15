@@ -1,11 +1,13 @@
 {% load static %}
 <div id="trueModal{{ post.pk }}" style="display: none; max-width: 800px;">
-                           <h3>
-                                <div data-fancybox-close=""><img src="{% static '/img/close__icon-01.png' %}" class="close_modal float-right"
-                                        title="Закрыть" alt=""></div>
-                                Часто задаваемые вопросы <br> в области аттетстации
-                            </h3>
+        <h3>
+                <div data-fancybox-close="">
+                        <img src="{% static '/img/close__icon-01.png' %}" class="close_modal float-right" title="Закрыть"
+                                alt="">
+                </div>
+                Оценка квалификаций
+        </h3>
 
-{{ post.text|safe}}
+        {{ post.text|safe}}
 
 </div>

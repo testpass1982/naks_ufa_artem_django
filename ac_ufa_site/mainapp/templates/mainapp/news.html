@@ -1,0 +1,175 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+   <div class="box_inside_pages">
+        <div class="container">
+                <div class="row">
+                        <div class="col-xl-1">
+                            <div class="headline_inside_pages_line"></div>
+                        </div>
+        
+                        <div class="col-xl-6">
+                            <p class="headline_inside_pages_text" id="#reestr">
+                          Новости
+                            </p>
+                            <p class="subtitle_inside_pages">
+                               События нашей организации
+                            </p>
+                        </div>
+                    </div>
+            <div class="row">
+                <div class="col-xl-2">
+                    
+                </div>
+              
+                <div class="col-xl-7">                     
+                     <div class="box__news__inside__block">
+                        <div class="to__share">
+                            <a href="https://vk.com/share.php?url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&utm_source=share2"> <img src="{% static '/img/social__icon-01.png' %}" class="vkontakte" title="Поделиться Вконтакте"   alt=""> </a>               
+                             <a href="https://plus.google.com/share?url=http://ics-naks.ru/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/nezavisimaya-ocenka-kvalifikacii-i-gosudarstvennaya-itogovaya-attestaciya-vypusknikov/"><img src="{% static '/img/social__icon-02.png' %}" title="Поделиться Google" class="googlepluse"   alt="">   </a>             
+                            <a href="https://twitter.com/intent/tweet?text=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&url=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&utm_source=share2"> <img src="{% static '/img/social__icon-03.png' %}" title="Поделиться Twitter" class="twitter"   alt="">  </a>              
+                             <a href="https://www.facebook.com/sharer.php?src=sp&u=https%3A%2F%2Ftech.yandex.ru%2Fshare%2F&title=%D0%91%D0%BB%D0%BE%D0%BA%20%C2%AB%D0%9F%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D1%8C%D1%81%D1%8F%C2%BB%20%E2%80%94%20%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&utm_source=share2"><img src="{% static '/img/social__icon-04.png' %}" title="Поделиться Facebook" class="facebook" alt="">  </a>              
+                          </div>   
+                             <p class="header__news">
+                            Соглашение о сотрудничестве в сфере подготовки, оценки квалификации и аттестации специалистов
+                            сварочного производства.
+                        </p> 
+                        <p class="date__news__inside">2 ноября 2018</p>  
+                                 
+                    <div class="box__news__inside">                  
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="{% static '/img/img__1.jpg' %}" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static '/img/img__1.jpg' %}" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="{% static '/img/img__1.jpg' %}" alt="Third slide">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>                          
+                       
+                        <p class="small__text__news">
+                            01 ноября 2018 года подписано соглашение о сотрудничестве в сфере подготовки, оценки
+                            квалификации и аттестации специалистов сварочного производства между Министерством занятости и
+                            трудовых отношений Республики Узбекистан, Саморегулируемой организацией Ассоциация
+                            "Национальное Агентство Контроля Сварки", Обществом с ограниченной ответственностью
+                            "Межотраслевой Высокотехнологичный Центр НАКС" и Международной ассоциацией по правовому
+                            содействию трудовым мигрантам.
+                        </p>
+                        <div class="line__news__end"></div>
+                  <p class="prikrep__doc">Прикрепленный файл:</p>
+                   <button class="soglashenie__button">
+                    <a href="#" class="soglashenie__button__text" title="Подписание соглашения о" download="#">Документ
+                      <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
+                  </button>     
+                    </div>
+                     </div>           
+                </div>  
+                <div class="col-xl-3">
+                        <p class="header__all__news">
+                                Другие новости
+                            </p>
+                            <div class="link__read__news__inside">
+                                    <a href="{% url 'index' %}#head__page" class="news__more__link">
+                                        Ко всем новостям
+                                    </a>
+                                </div>   
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="line__otstup__inside__pages"></div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="block__news">
+                            <a href="{% url 'index' %}#head__page" class="link__news">
+                                <div class="box__news">
+                                    <p class="data__news__main">25 Декабря 2018</p>
+                                    <p class="box__news__text">
+                                        Соглашение о сотрудничестве между Саморегулируемой организацией Ассоциация
+                                        "Национальное Агентство Контроля Св...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+            </div>  
+            
+    
+        </div>
+   </div>
+{% endblock %}

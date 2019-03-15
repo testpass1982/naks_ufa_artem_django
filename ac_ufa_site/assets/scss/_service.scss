@@ -1,11 +1,17 @@
 .box_background{
     background-color: #f3f3f3;
     padding: 50px 0px 50px;
+    @media screen and (max-width: 435px) {
+        padding: 25px 0px 25px;   
+      }
 }
 
 .box_white_background{
     background-color: #fff;
     padding: 50px 0px 50px;
+    @media screen and (max-width: 435px) {
+        padding: 25px 0px 25px;   
+      }
 }
 
 .left_line_headline {
@@ -13,7 +19,7 @@
     margin-top: 35px;
     width: 95px;
     @media screen and (max-width: 435px) {
-      display: none;
+      display: none;     
     }
 }
 
@@ -26,7 +32,7 @@
     text-transform: uppercase;
     margin-bottom: 5px;
     @media screen and (max-width: 435px) {
-        margin-top: 25px;
+        margin-top: 15px;
         font-size: 30px
       }
 }
@@ -34,14 +40,19 @@
 .subtitle {
     font-size: 14px;
     margin-bottom: 35px;
+    @media screen and (max-width: 435px) {
+        margin-bottom: 15px;       
+      }
 }
+
+
 
 // img
 
 .box_img_service {   
     margin-bottom: 45px;
     background: url(/static/img/img_service_1.png) no-repeat;
-    background-size: cover;
+    background-size: cover;   
     a{
         text-decoration: none;
     }
@@ -54,7 +65,8 @@
         -o-transform: scale(1.01);
     }
     @media screen and (max-width: 435px) {
-        margin-top: 25px;
+        margin-top: 10px;
+        margin-bottom: 15px;
       }
 }
 
@@ -162,9 +174,10 @@
 .box_content {
     background-color: #252525e8;
     padding: 100px 25px 65px 45px;
+    height: 50%;
 
     @media screen and (max-width: 435px) {
-        padding: 50px 15px 45px 25px;
+        padding: 25px 15px 25px 25px;        
     }
 
 }
@@ -174,9 +187,12 @@
     font-weight: 400;
     color: #fff;
     font-weight: 450;
-
+    width: 60%;
     @media screen and (max-width: 435px) {
-        font-size: 16px;
+        font-size: 14px;
+        width: 60%;
+        text-transform: uppercase;
+        line-height: 1.8;
     }
 
 }
@@ -184,10 +200,10 @@
 
 .line_service_yellow {
     border: 0.5px solid #ffbd3d;
-    width: 250px;
+    width: 50%;
 
-    @media screen and (max-width: 320px) {
-        width: 150px;
+    @media screen and (max-width: 435px) {
+        width: 50%;        
     }
 }
 
@@ -195,12 +211,19 @@
     font-size: 22px;
     font-weight: 450;
     color: #000;
-    margin-top: 25px;
+    margin-top: 15px;
+    @media screen and (max-width: 435px) {
+       font-size: 16px;   
+       margin-top: 5px;   
+    }
 }
 
 .info_text_service {
     font-size: 16px;
     line-height: 1.8;
+    @media screen and (max-width: 435px) {
+        font-size: 14px;      
+     }
 }
 
 .more {
@@ -210,8 +233,10 @@
     padding: 0px;
     margin-top: 15px;
     margin-bottom: 55px;
+    @media screen and (max-width: 435px) {
+        margin-bottom: 25px;      
+    }
     
-
     a {
         text-decoration: none;
         color: #000;
@@ -224,8 +249,11 @@
     border: 1px solid rgb(128, 128, 128);   
     padding: 10px 25px;
     color: #000;   
-    @media screen and (max-width: 320px) {
-        padding: 10px 10px;
+    @media screen and (max-width: 435px) {
+        padding: 10px 140px;
+    }
+    @media screen and (max-width: 400px) {
+        padding: 10px 100px;
     }
 
     &:hover {

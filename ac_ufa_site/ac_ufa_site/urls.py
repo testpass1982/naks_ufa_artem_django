@@ -24,6 +24,7 @@ urlpatterns = [
    path('', mainapp.index, name='index'),
    path('reestr/', mainapp.reestr, name='reestr'),  
    path('doc/', mainapp.doc, name='doc'), 
+   path('news/', mainapp.news, name='news'), 
     path(
         'detailview/<slug:content>/<slug:pk>',
         mainapp.details,

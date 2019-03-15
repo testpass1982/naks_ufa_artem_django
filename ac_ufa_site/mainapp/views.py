@@ -35,7 +35,7 @@ def index(request):
     #     publish_on_main_page=True).order_by('-created_date')[:3]
 
     main_page_news = Post.objects.filter(
-        publish_on_main_page=True).order_by('-published_date')[:4]
+        publish_on_main_page=True).order_by('-published_date')[:7]
 
     #Посты с картинками
     posts = {}
@@ -73,6 +73,8 @@ def reestr(request):
 
 def doc(request):
     return render(request, 'mainapp/doc.html')
+def news(request):
+    return render(request, 'mainapp/news.html')
 
 def details(request, pk=None, content=None):
 
