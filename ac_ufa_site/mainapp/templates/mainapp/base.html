@@ -1,4 +1,3 @@
-
 {% load staticfiles %}{% load sass_tags %}<!DOCTYPE html>
 <html lang="en">
 
@@ -13,13 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" href="{% static 'owlcarousel/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
-    <link rel="stylesheet" href="{% static 'https://unpkg.com/flickity@2/dist/flickity.min.css' %}">
 
-  <!-- SCRIPT -->
-  <script src="js/w3.js"></script>
-  <!-- END SCRIPT -->
 
   <!-- <link rel="stylesheet" href="fonts/font.css"> -->
   <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
@@ -27,6 +20,9 @@
   <link rel="stylesheet" href="{% sass_src 'scss/style.scss' %}">
   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
   <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+  <link rel="stylesheet" href="{% static 'owlcarousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'https://unpkg.com/flickity@2/dist/flickity.min.css' %}">
   {% endblock %}
 
 
@@ -43,7 +39,11 @@
   <!-- End Include Modal -->
 
   <!-- Include bg-menu-info --> 
-    {% include 'mainapp/includes/bg-menu-info.html' %} 
+    {% if request.resolver_match.url_name == 'index' %}
+      {% include 'mainapp/includes/bg-menu-info.html' %} 
+    {% else %}
+      {% include 'mainapp/includes/bg-inner-page.html' %}
+    {% endif %}
   {% comment %} <div w3-include-html="includes/bg-menu-info.html"></div> {% endcomment %}
   <!-- End Include bg-menu-info -->
 
@@ -60,16 +60,9 @@
 
 
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
     crossorigin="anonymous"></script>
-    
-    
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
 
@@ -78,8 +71,9 @@
   <script src="{% static 'js/jquery.fancybox.js' %}"></script>
   <script src="{% static 'js/jquery.maskedinput.js' %}"></script>
   <script src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
-  <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'kkkuuujs/jquery.counterup.min.js' %}"></script>
   <script src="{% static 'js/jquery.counterup.js' %}"></script>
+  <script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
 
 
 </body>

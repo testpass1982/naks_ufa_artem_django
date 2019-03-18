@@ -1,16 +1,27 @@
 // Кнопка поиска
-window.onload = function () {
-    // Обрез текста
-    $('.box__news').each (function() {
-      let size = 250;
-      let newsText = $(this).text ();
-      if (newsText.length > size){
-        slicedText = newsText.slice(0, size);
-        $(this).text(`${slicedText}...`);
-      }
-    }
-    )
 
+window.onload = function () {
+  // Обрез текста
+  $('.box__news').each (function() {
+    let size = 250;
+    let newsText = $(this).text ();
+    if (newsText.length > size){
+      slicedText = newsText.slice(0, size);
+      $(this).text(`${slicedText}...`);
+    }
+  }
+  )
+  //owl-carousel initiazilation
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+
+  $("#service-menu-link").click(function() {
+      console.log('clicked');
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#center").offset().top
+      }, 2000);
+    });
 
 // Просмотр+скачать
   $().fancybox({

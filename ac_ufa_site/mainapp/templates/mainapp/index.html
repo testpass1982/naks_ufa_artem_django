@@ -3,6 +3,8 @@
 
 {% block content  %}
 
+{% comment %} {{ request.resolver_match.url_name }} {% endcomment %}
+
   <!-- Include Modal -->
   {% include 'mainapp/includes/modal-window.html' %}
   {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
