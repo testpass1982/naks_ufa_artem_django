@@ -1,6 +1,16 @@
 // Кнопка поиска
 window.onload = function () {
-  // Карусель
+    // Обрез текста
+    $('.box__news').each (function() {
+      let size = 250;
+      let newsText = $(this).text ();
+      if (newsText.length > size){
+        slicedText = newsText.slice(0, size);
+        $(this).text(`${slicedText}...`);
+      }
+    }
+    )
+
 
 // Просмотр+скачать
   $().fancybox({

@@ -75,6 +75,10 @@ def doc(request):
     return render(request, 'mainapp/doc.html')
 def news(request):
     return render(request, 'mainapp/news.html')
+def news_two(request):
+    return render(request, 'mainapp/news_two.html')
+def all_news(request):
+    return render(request, 'mainapp/all_news.html')
 
 def details(request, pk=None, content=None):
 
